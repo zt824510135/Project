@@ -1,7 +1,5 @@
 """
-chat room
-env:python3
-socket and fork exercise
+1
 """
 
 from socket import *
