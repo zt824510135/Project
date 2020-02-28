@@ -1,16 +1,4 @@
-"""
-1
-"""
 
-from socket import *
-
-# 全局变量
-ADDR = ('0.0.0.0',8888)
-
-# 应用于存储用户 {name:address}
-user={}
-
-# 处理进入聊天室请求
 def do_login(s,name,addr):
     if name in user:
         s.sendto(b"FAIL",addr)
